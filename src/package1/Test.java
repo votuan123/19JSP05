@@ -43,6 +43,6 @@ public class Test {
 			break;
 		}
 
-//		sc.close();
+		sc.close(); 
 	}
 }
