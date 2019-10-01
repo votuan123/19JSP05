@@ -25,6 +25,7 @@ public class Job {
 	}
 
 	public void setNamejob(String namejob) {
+	//Test
 		this.namejob = namejob;
 	}
 
