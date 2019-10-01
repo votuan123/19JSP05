@@ -21,12 +21,10 @@ public class Job {
 	}
 
 	public String getNamejob() {
-	//test git
 		return namejob;
 	}
 
 	public void setNamejob(String namejob) {
-	//Test
 		this.namejob = namejob;
 	}
 
