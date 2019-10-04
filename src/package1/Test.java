@@ -40,6 +40,21 @@ public class Test {
 	}
 	public static void CreateEmp() {
 		Scanner sc = new Scanner(System.in);
+		System.out.println("input id");
+		int id = Integer.parseInt(sc.nextLine());
+		System.out.println("input name");
+		String name = sc.nextLine();
+		System.out.println("input salary");
+		int salary = Integer.parseInt(sc.nextLine());
+		System.out.println("input job id");
+		int idJob = Integer.parseInt(sc.nextLine());
+		System.out.println("input job");
+		String namejob = sc.nextLine();
+	}
+
+	public static void showemployee() {
+		
+		Scanner sc = new Scanner(System.in);
 		System.out.println("input the numer of employee");
 		int number = Integer.parseInt(sc.nextLine());
 		Employee[] e = new Employee[number];
@@ -63,11 +78,6 @@ public class Test {
 			System.out.println("id :" + e[i].id + ",name:" + e[i].name + ",salary" + e[i].salary + ",Job:" + e[i].job.namejob);
 		}
 
-	}
-
-	public static void showemployee() {
-		
-		
 	}
 	public static void question()
 	{
