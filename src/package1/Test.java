@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Test {
 
+	
 	public static void main(String[] args) {
 		int status;
 		do {
@@ -23,11 +24,11 @@ public class Test {
 				question();
 				break;
 			case 2:
-				display();
+				showemployee();
 				question();
 				break;
 			case 3:
-				System.out.println("program finish");
+				System.out.println("program to finish");
 				break;
 			default:
 				System.out.println("wrong choose");
@@ -38,20 +39,6 @@ public class Test {
 		
 	}
 	public static void CreateEmp() {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("input infomation employee");
-		System.out.println("input id");
-		int id = Integer.parseInt(sc.nextLine());
-		System.out.println("input name");
-		String name = sc.nextLine();
-		System.out.println("input salary");
-		String salary = sc.nextLine();
-		System.out.println("input job");
-		String job = sc.nextLine();
-
-	}
-
-	public static void display() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("input the numer of employee");
 		int number = Integer.parseInt(sc.nextLine());
@@ -71,10 +58,16 @@ public class Test {
 			System.out.println("input job");
 			String namejob = sc.nextLine();
 			Job j = new Job(idJob, namejob);
-			e[i] = new Employee(id, name, salary, j);
+			e[i]=new Employee(idJob, name, salary, j);
 			System.out.println("================");
 			System.out.println("id :" + e[i].id + ",name:" + e[i].name + ",salary" + e[i].salary + ",Job:" + e[i].job.namejob);
 		}
+
+	}
+
+	public static void showemployee() {
+		
+		
 	}
 	public static void question()
 	{
@@ -87,7 +80,7 @@ public class Test {
 		}
 		if(select==0)
 		{
-			System.out.println("exit");
+			System.out.println("program to finish");
 		}
 		
 	}
